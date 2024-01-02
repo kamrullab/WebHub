@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALL WEBSITE IN SINGLE PAGE (ELITEKAMRUL)</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="https://png.pngtree.com/png-vector/20230921/ourmid/pngtree-18-plus-icon-vector-flat-design-year-old-sticker-only-18-png-image_10152291.png">
+    <!-- Future Photo -->
+    <meta property="og:image" content="https://media.licdn.com/dms/image/C4D1BAQH1BoVSufgUAw/company-background_10000/0/1602178437769/digitalwebhub_cover?e=2147483647&v=beta&t=0FLvOjhpMrtfgSlpKnBZ-gPvpF50UdLAHePXwxNK0p4">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+        }
+
+        .header-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .category-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .category {
+            width: 100%;
+            margin: 20px;
+            text-align: center;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        h2 {
+            font-family: 'Helvetica', sans-serif;
+            font-size: 24px;
+            color: #333;
+            margin-top: 20px;
+        }
+
+        li {
+            margin: 10px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+            text-align: center;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .neumorphism {
+            box-shadow: 5px 5px 10px #b0c6d9, -5px -5px 10px #f0ffff;
+            color: #333;
+        }
+
+        .glassmorphism {
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1), -5px -5px 10px rgba(255, 255, 255, 0.5);
+            color: #333;
+        }
+
+        .button:hover {
+            transform: scale(1.05);
+        }
+
+        /* Custom button colors for each website */
+        .westernunion { background-color: #004080; color: #fff; }
+        .dittomusic { background-color: #ff007f; color: #fff; }
+        .paysafecard { background-color: #00a9e0; color: #fff; }
+        .elegantthemes { background-color: #662d91; color: #fff; }
+        .codecanyon { background-color: #f44336; color: #fff; }
+        .themeforest { background-color: #2196f3; color: #fff; }
+        .cdbaby { background-color: #8e44ad; color: #fff; }
+        .topcashback { background-color: #2ecc71; color: #fff; }
+        .resellerclub { background-color: #f39c12; color: #fff; }
+        .digitalocean { background-color: #3498db; color: #fff; }
+        .onlyfans { background-color: #d35400; color: #fff; }
+        .depositphotos { background-color: #27ae60; color: #fff; }
+        .paypal { background-color: #003087; color: #fff; }
+        .facebook { background-color: #1877f2; color: #fff; }
+        .tiktok { background-color: #69C9D0; color: #fff; }
+        .freepik { background-color: #e74c3c; color: #fff; }
+        .xoom { background-color: #5cb85c; color: #fff; }
+        .xhamster { background-color: #ffcc00; color: #000; }
+        .live { background-color: #0078d7; color: #fff; }
+        .instagram { background-color: #bc2a8d; color: #fff; }
+        .twitter { background-color: #1da1f2; color: #fff; }
+        .bet365 { background-color: #0170fe; color: #fff; }
+        .betsafe { background-color: #000; color: #fff; }
+        .remitly { background-color: #00b3e6; color: #fff; }
+        .worldremit { background-color: #1e1e1e; color: #fff; }
+        .tunecore { background-color: #ff6600; color: #fff; }
+        .amuse { background-color: #ff3399; color: #fff; }
+        .wix { background-color: #0c1e38; color: #fff; }
+        .wordpress { background-color: #21759b; color: #fff; }
+        .rakuten { background-color: #e72119; color: #fff; }
+        .honey { background-color: #ff6600; color: #fff; }
+        .namecheap { background-color: #3d4e57; color: #fff; }
+        .hostgator { background-color: #d54128; color: #fff; }
+        .heroku { background-color: #79589f; color: #fff; }
+        .remotework { background-color: #00b894; color: #fff; }
+        .unsplash { background-color: #000; color: #fff; }
+        /* ... (add more website styles if needed) ... */
+        .snapchat { background-color: #fffc00; color: #000; }
+        .linkedin { background-color: #0077b5; color: #fff; }
+        .redtube { background-color: #ff5050; color: #fff; }
+        .youporn { background-color: #ffcc00; color: #000; }
+        .unibet { background-color: #00a2f5; color: #fff; }
+        .sport { background-color: #222; color: #fff; }
+        .skrill { background-color: #009fe3; color: #fff; }
+        .stripe { background-color: #00afe1; color: #fff; }
+        .tumblr { background-color: #35465c; color: #fff; }
+        .snapfish { background-color: #ffcc00; color: #000; }
+        .vimeo { background-color: #162221; color: #fff; }
+        .dailymotion { background-color: #0066cc; color: #fff; }
+        .dropbox { background-color: #007ee5; color: #fff; }
+        .onedrive { background-color: #0067b8; color: #fff; }
+        .indeed { background-color: #2164f3; color: #fff; }
+        .monster { background-color: #1d2d47; color: #fff; }
+        .expedia { background-color: #e4282d; color: #fff; }
+        .booking { background-color: #003580; color: #fff; }
+        .coursera { background-color: #4285f4; color: #fff; }
+        .udemy { background-color: #f06713; color: #fff; }
+        .grubhub { background-color: #00a75d; color: #fff; }
+        .doordash { background-color: #ff671f; color: #fff; }
+        .flipboard { background-color: #e12828; color: #fff; }
+        .feedly { background-color: #2bb24c; color: #fff; }
+        .expressvpn { background-color: #1c5f94; color: #fff; }
+        .nordvpn { background-color: #009e74; color: #fff; }
+        .venmo { background-color: #3d95ce; color: #fff; }
+        .soundcloud { background-color: #ff5500; color: #fff; }
+        .distrokid { background-color: #0c77bd; color: #fff; }
+        .joomla { background-color: #fc9b5e; color: #fff; }
+        .drupal { background-color: #0077c0; color: #fff; }
+        .shopkick { background-color: #3f8c55; color: #fff; }
+        .ibotta { background-color: #00a862; color: #fff; }
+        .dreamhost { background-color: #0d4053; color: #fff; }
+        .siteground { background-color: #333; color: #fff; }
+        .alibabacloud { background-color: #ff6a00; color: #fff; }
+        .scaleway { background-color: #4f545b; color: #fff; }
+        .gettyimages { background-color: #f4f4f4; color: #000; }
+        .shutterstock { background-color: #e92e2e; color: #fff; }
+        .reddit { background-color: #ff4500; color: #fff; }
+        .quora { background-color: #a82400; color: #fff; }
+        .xart { background-color: #ffcccb; color: #000; }
+        .pornmd { background-color: #ff5050; color: #fff; }
+        .betfair { background-color: #00acee; color: #fff; }
+        .bwin { background-color: #703b22; color: #fff; }
+        .neteller { background-color: #00b0f0; color: #fff; }
+        .googlepay { background-color: #4285f4; color: #fff; }
+        .mewe { background-color: #455a64; color: #fff; }
+        .diaspora { background-color: #175e47; color: #fff; }
+        .vevo { background-color: #ff0054; color: #fff; }
+        .rumble { background-color: #f80000; color: #fff; }
+        .pcloud { background-color: #4c72b0; color: #fff; }
+        .sync { background-color: #00b2a5; color: #fff; }
+        .ziprecruiter { background-color: #085ff7; color: #fff; }
+        .simplyhired { background-color: #0e76a8; color: #fff; }
+        .orbitz { background-color: #fe6700; color: #fff; }
+        .hotels { background-color: #ed643a; color: #fff; }
+        .skillshare { background-color: #00b2a5; color: #fff; }
+        .edx { background-color: #21496c; color: #fff; }
+        .caviar { background-color: #ff5733; color: #fff; }
+        .grubhub { background-color: #00a75d; color: #fff; }
+        .digg { background-color: #0093dc; color: #fff; }
+        .alltop { background-color: #4682b4; color: #fff; }
+        .surfshark { background-color: #1e429f; color: #fff; }
+        .pia { background-color: #333; color: #fff; }
+               
+        /* USA-based websites */
+                
+        .nytimes { background-color: #d00000; color: #fff; }
+        .washingtonpost { background-color: #000; color: #fff; }
+        .usatoday { background-color: #394240; color: #fff; }
+        .cnet { background-color: #005cbf; color: #fff; }
+        .wired { background-color: #ff6600; color: #fff; }
+        .bloomberg { background-color: #545454; color: #fff; }
+        .forbes { background-color: #0e3b7f; color: #fff; }
+        .walmart { background-color: #007dc6; color: #fff; }
+        .target { background-color: #cc0000; color: #fff; }
+        .linkedin { background-color: #0077b5; color: #fff; }
+        .nextdoor { background-color: #1d9a6f; color: #fff; }
+        .zillow { background-color: #ff5a5f; color: #fff; }
+        .realtor { background-color: #f69c55; color: #fff; }
+        .usagov { background-color: #0c4b9b; color: #fff; }
+        .mayoclinic { background-color: #fecd00; color: #000; }
+        .cdc { background-color: #164766; color: #fff; }
+        .harvard { background-color: #a51c30; color: #fff; }
+        .mit { background-color: #b31b1b; color: #fff; }
+        .ticketmaster { background-color: #007bff; color: #fff; }
+        .eventbrite { background-color: #f04868; color: #fff; }
+
+                /* Additional websites */
+                .allrecipes { background-color: #e64d00; color: #fff; }
+        .foodnetwork { background-color: #e2231a; color: #fff; }
+        .espn { background-color: #ff0033; color: #fff; }
+        .nba { background-color: #1a4070; color: #fff; }
+        .github { background-color: #24292e; color: #fff; }
+        .stackoverflow { background-color: #f48024; color: #fff; }
+        .expedia { background-color: #d8e204; color: #000; }
+        .booking { background-color: #003580; color: #fff; }
+        .coursera { background-color: #6f42c1; color: #fff; }
+        .udemy { background-color: #f26725; color: #fff; }
+        .indeed { background-color: #2164f3; color: #fff; }
+        .monster { background-color: #1d365e; color: #fff; }
+        .dropbox { background-color: #0061d5; color: #fff; }
+        .onedrive { background-color: #094ab2; color: #fff; }
+        .mewe { background-color: #16a64c; color: #fff; }
+        .diaspora { background-color: #262626; color: #fff; }
+        .vevo { background-color: #ff0000; color: #fff; }
+        .rumble { background-color: #f80000; color: #fff; }
+        .pcloud { background-color: #00a9e0; color: #fff; }
+        .sync { background-color: #00bcd4; color: #fff; }
+        .ziprecruiter { background-color: #205391; color: #fff; }
+        .simplyhired { background-color: #0073cc; color: #fff; }
+        .orbitz { background-color: #007dc6; color: #fff; }
+        .hotels { background-color: #d32f2f; color: #fff; }
+        .skillshare { background-color: #00adb5; color: #fff; }
+        .edx { background-color: #ff4500; color: #fff; }
+        .grubhub { background-color: #00a64d; color: #fff; }
+        .doordash { background-color: #ff6c00; color: #fff; }
+        .flipboard { background-color: #e12828; color: #fff; }
+        .feedly { background-color: #2bb24c; color: #fff; }
+        .expressvpn { background-color: #33a532; color: #fff; }
+        .nordvpn { background-color: #0c4c96; color: #fff; }
+        .venmo { background-color: #3d95ce; color: #fff; }
+        .stripe { background-color: #00aff0; color: #fff; }
+        .soundcloud { background-color: #ff3300; color: #fff; }
+        .distrokid { background-color: #0066cc; color: #fff; }
+        .joomla { background-color: #f44366; color: #fff; }
+        .drupal { background-color: #0077c0; color: #fff; }
+        .shopkick { background-color: #e15258; color: #fff; }
+        .ibotta { background-color: #ff6f61; color: #fff; }
+                
+        /* USA-based websites */
+                .chase { background-color: #1565c0; color: #fff; }
+        .boa { background-color: #e0115f; color: #fff; }
+        .wellsfargo { background-color: #001d3d; color: #fff; }
+        .citibank { background-color: #003087; color: #fff; }
+        .jpmorgan { background-color: #1d176b; color: #fff; }
+
+        /* Online Payment/Finance */
+        .paypal { background-color: #003087; color: #fff; }
+        .venmo { background-color: #3d95ce; color: #fff; }
+        .stripe { background-color: #00aff0; color: #fff; }
+        .square { background-color: #2ecc71; color: #fff; }
+        .quickbooks { background-color: #1d365e; color: #fff; }
+        /* Content Subscription */
+        .patreon { background-color: #ff424d; color: #fff; }
+        .justforfans { background-color: #000; color: #fff; }
+        .admiremevip { background-color: #e0427e; color: #fff; }
+        .ismygirl { background-color: #f5a623; color: #fff; }
+        .avnstars { background-color: #ff0066; color: #fff; }
+        .fancentro { background-color: #e1306c; color: #fff; }
+        .loyalfans { background-color: #ec008c; color: #fff; }
+        .manyvids { background-color: #e9644a; color: #fff; }
+        .connectpal { background-color: #ffcc00; color: #000; }
+        .sextpanther { background-color: #ff69b4; color: #fff; }
+        /* Music Distribution */
+        .cdbaby { background-color: #8e44ad; color: #fff; }
+        .distrokid { background-color: #2ecc71; color: #fff; }
+        .tunecore { background-color: #ff007f; color: #fff; }
+        .amuse { background-color: #e74c3c; color: #fff; }
+        .reverbnation { background-color: #21bfbf; color: #fff; }
+        .landr { background-color: #ffb900; color: #fff; }
+         /* Financial Services */
+         .westernunion { background-color: #004080; color: #fff; }
+        .moneygram { background-color: #1f3557; color: #fff; }
+        .wise { background-color: #4caf50; color: #fff; }
+        .remitly { background-color: #2a86ff; color: #fff; }
+        .worldremit { background-color: #0071bd; color: #fff; }
+        .paypal { background-color: #003087; color: #fff; }
+        .skrill { background-color: #2baee0; color: #fff; }
+        .venmo { background-color: #3d95ce; color: #fff; }
+        .revolut { background-color: #00b2ff; color: #fff; }
+        .payoneer { background-color: #009cde; color: #fff; }
+        .xoom { background-color: #5cb85c; color: #fff; }
+        .digitalocean { background-color: #3498db; color: #fff; }
+        .aws { background-color: #ff9900; color: #fff; }
+        .gcp { background-color: #4285f4; color: #fff; }
+        .azure { background-color: #0078d4; color: #fff; }
+        .heroku { background-color: #79589f; color: #fff; }
+        .alibabacloud { background-color: #e94822; color: #fff; }
+        .scaleway { background-color: #4f4f4f; color: #fff; }
+        .sport { background-color: #231f20; color: #fff; }
+        /* Money Transfer */
+        .remitly { background-color: #4caf50; color: #fff; }
+        .worldremit { background-color: #00a9e0; color: #fff; }
+        .wise { background-color: #32a852; color: #fff; }
+        .revolut { background-color: #00bfff; color: #fff; }
+        .stripe { background-color: #00a1f1; color: #fff; }
+        .transfergo { background-color: #f15643; color: #fff; }
+        .ofx { background-color: #003791; color: #fff; }
+        .worldfirst { background-color: #009639; color: #fff; }
+        .remit2india { background-color: #ee7622; color: #fff; }
+
+        @media (min-width: 576px) {
+            .category {
+                width: 48%;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .category {
+                width: 32%;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .category {
+                width: 24%;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .category {
+                width: 19%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header style="text-align: center; padding: 20px; background-color: transparent;">
+        <div class="header-content">
+            <h1 style="font-size: 36px; color: #333; margin-bottom: 10px; font-weight: bold;">Discover ELITEKAMRUL's Hub</h1>
+            <p style="font-size: 18px; color: #555;">Explore a curated collection of websites all in one place!</p>
+        </div>
+    </header>
+    
+
+    <div class="category-container">
+        <!-- Category: Financial Services -->
+        <div class="category">
+            <h2>Financial Services</h2>
+            <ul>
+                <li><a href="https://westernunion.com/" class="btn button glassmorphism westernunion" target="_blank" rel="noopener noreferrer">Western Union</a></li>
+            <li><a href="https://www.moneygram.com/" class="btn button neumorphism moneygram" target="_blank" rel="noopener noreferrer">MoneyGram</a></li>
+            <li><a href="https://wise.com/" class="btn button glassmorphism wise" target="_blank" rel="noopener noreferrer">Wise (formerly TransferWise)</a></li>
+            <li><a href="https://www.remitly.com/" class="btn button neumorphism remitly" target="_blank" rel="noopener noreferrer">Remitly</a></li>
+            <li><a href="https://www.worldremit.com/" class="btn button glassmorphism worldremit" target="_blank" rel="noopener noreferrer">WorldRemit</a></li>
+            <li><a href="https://www.paypal.com/" class="btn button neumorphism paypal" target="_blank" rel="noopener noreferrer">PayPal</a></li>
+            <li><a href="https://www.skrill.com/" class="btn button glassmorphism skrill" target="_blank" rel="noopener noreferrer">Skrill</a></li>
+            <li><a href="https://venmo.com/" class="btn button neumorphism venmo" target="_blank" rel="noopener noreferrer">Venmo</a></li>
+            <li><a href="https://www.revolut.com/" class="btn button glassmorphism revolut" target="_blank" rel="noopener noreferrer">Revolut</a></li>
+            <li><a href="https://www.payoneer.com/" class="btn button neumorphism payoneer" target="_blank" rel="noopener noreferrer">Payoneer</a></li>
+            <li><a href="https://www.xoom.com/" class="btn button glassmorphism xoom" target="_blank" rel="noopener noreferrer">Xoom (a PayPal service)</a></li>
+                <li><a href="https://westernunion.com/us/en/login.html" class="btn button neumorphism westernunion" target="_blank" rel="noopener noreferrer">Western Union</a></li>
+            </ul>
+        </div>
+
+        <!-- Category: Music -->
+        <div class="category">
+            <h2>Music</h2>
+            <ul>
+                <li><a href="https://dittomusic.com/en/login/" class="btn button glassmorphism dittomusic" target="_blank" rel="noopener noreferrer">Ditto Music</a></li>
+            <li><a href="https://www.tunecore.com/" class="btn button neumorphism tunecore" target="_blank" rel="noopener noreferrer">TuneCore</a></li>
+            <li><a href="https://www.amuse.io/" class="btn button glassmorphism amuse" target="_blank" rel="noopener noreferrer">Amuse</a></li>
+            <li><a href="https://distrokid.com/" class="btn button neumorphism distrokid" target="_blank" rel="noopener noreferrer">DistroKid</a></li>
+            <li><a href="https://www.reverbnation.com/" class="btn button glassmorphism reverbnation" target="_blank" rel="noopener noreferrer">ReverbNation</a></li>
+            <li><a href="https://www.landr.com/" class="btn button neumorphism landr" target="_blank" rel="noopener noreferrer">LANDR</a></li>
+                <li><a href="https://dittomusic.com/en/login/" class="btn button glassmorphism dittomusic" target="_blank" rel="noopener noreferrer">Ditto Music</a></li>
+            </ul>
+        </div>
+
+        <!-- Category: Online Payments -->
+        <div class="category">
+            <h2>Online Payments</h2>
+            <ul>
+                <li><a href="https://www.paysafecard.com/en/" class="btn button neumorphism paysafecard" target="_blank" rel="noopener noreferrer">Paysafecard</a></li>
+                <li><a href="https://www.paypal.com/signin" class="btn button glassmorphism paypal" target="_blank" rel="noopener noreferrer">PayPal</a></li>
+        
+            <li><a href="https://venmo.com/" class="btn button neumorphism venmo" target="_blank" rel="noopener noreferrer">Venmo</a></li>
+            <li><a href="https://stripe.com/" class="btn button glassmorphism stripe" target="_blank" rel="noopener noreferrer">Stripe</a></li>
+            <li><a href="https://squareup.com/" class="btn button neumorphism square" target="_blank" rel="noopener noreferrer">Square</a></li>
+            <li><a href="https://quickbooks.intuit.com/" class="btn button glassmorphism quickbooks" target="_blank" rel="noopener noreferrer">QuickBooks</a></li>
+        
+            </ul>
+        </div>
+
+        <!-- Category: Web Development -->
+        <div class="category">
+            <h2>Web Development</h2>
+            <ul>
+                <li><a href="https://www.elegantthemes.com/" class="btn button neumorphism elegantthemes" target="_blank" rel="noopener noreferrer">Elegant Themes</a></li>
+                <li><a href="https://codecanyon.net/" class="btn button glassmorphism codecanyon" target="_blank" rel="noopener noreferrer">CodeCanyon</a></li>
+                <li><a href="https://themeforest.net/" class="btn button neumorphism themeforest" target="_blank" rel="noopener noreferrer">ThemeForest</a></li>
+                <li><a href="https://www.resellerclub.com/" class="btn button glassmorphism resellerclub" target="_blank" rel="noopener noreferrer">ResellerClub</a></li>
+            </ul>
+        </div>
+
+        <!-- Category: Music Distribution -->
+        <div class="category">
+            <h2>Music Distribution</h2>
+            <ul>
+                <li><a href="https://cdbaby.com/" class="btn button glassmorphism cdbaby" target="_blank" rel="noopener noreferrer">CD Baby</a></li>
+            <li><a href="https://distrokid.com/" class="btn button neumorphism distrokid" target="_blank" rel="noopener noreferrer">DistroKid</a></li>
+            <li><a href="https://www.tunecore.com/" class="btn button glassmorphism tunecore" target="_blank" rel="noopener noreferrer">TuneCore</a></li>
+            <li><a href="https://www.amuse.io/" class="btn button neumorphism amuse" target="_blank" rel="noopener noreferrer">Amuse</a></li>
+            <li><a href="https://www.reverbnation.com/" class="btn button glassmorphism reverbnation" target="_blank" rel="noopener noreferrer">ReverbNation</a></li>
+            <li><a href="https://www.landr.com/" class="btn button neumorphism landr" target="_blank" rel="noopener noreferrer">LANDR</a></li>
+                <li><a href="https://cdbaby.com/" class="btn button neumorphism cdbaby" target="_blank" rel="noopener noreferrer">CD Baby</a></li>
+            </ul>
+        </div>
+
+        <!-- Category: Cashback & Rewards -->
+        <div class="category">
+            <h2>Cashback & Rewards</h2>
+            <ul>
+                <li><a href="https://www.topcashback.com/" class="btn button glassmorphism topcashback" target="_blank" rel="noopener noreferrer">TopCashback</a></li>
+            <li><a href="https://www.rakuten.com/" class="btn button neumorphism rakuten" target="_blank" rel="noopener noreferrer">Rakuten</a></li>
+            <li><a href="https://www.joinhoney.com/" class="btn button glassmorphism honey" target="_blank" rel="noopener noreferrer">Honey</a></li>
+            <li><a href="https://www.shopkick.com/" class="btn button neumorphism shopkick" target="_blank" rel="noopener noreferrer">Shopkick</a></li>
+            <li><a href="https://ibotta.com/" class="btn button glassmorphism ibotta" target="_blank" rel="noopener noreferrer">Ibotta</a></li>
+                <li><a href="https://www.topcashback.com/" class="btn button glassmorphism topcashback" target="_blank" rel="noopener noreferrer">TopCashback</a></li>
+            </ul>
+        </div>
+
+        <!-- Category: Cloud Hosting -->
+        <div class="category">
+            <h2>Cloud Hosting</h2>
+            <ul>
+                <li><a href="https://www.digitalocean.com/" class="btn button glassmorphism digitalocean" target="_blank" rel="noopener noreferrer">DigitalOcean</a></li>
+            <li><a href="https://aws.amazon.com/" class="btn button neumorphism aws" target="_blank" rel="noopener noreferrer">Amazon Web Services (AWS)</a></li>
+            <li><a href="https://cloud.google.com/" class="btn button glassmorphism gcp" target="_blank" rel="noopener noreferrer">Google Cloud Platform (GCP)</a></li>
+            <li><a href="https://azure.microsoft.com/" class="btn button neumorphism azure" target="_blank" rel="noopener noreferrer">Microsoft Azure</a></li>
+            <li><a href="https://www.heroku.com/" class="btn button glassmorphism heroku" target="_blank" rel="noopener noreferrer">Heroku</a></li>
+            <li><a href="https://www.alibabacloud.com/" class="btn button neumorphism alibabacloud" target="_blank" rel="noopener noreferrer">Alibaba Cloud</a></li>
+            <li><a href="https://www.scaleway.com/" class="btn button glassmorphism scaleway" target="_blank" rel="noopener noreferrer">Scaleway</a></li>
+                <li><a href="https://www.digitalocean.com/" class="btn button neumorphism digitalocean" target="_blank" rel="noopener noreferrer">DigitalOcean</a></li>
+            </ul>
+        </div>
+
+        <!-- Category: Content Subscription -->
+        <div class="category">
+            <h2>Content Subscription</h2>
+            <ul>
+                <li><a href="https://onlyfans.com/" class="btn button glassmorphism onlyfans" target="_blank" rel="noopener noreferrer">OnlyFans</a></li>
+                <li><a href="https://www.onlyfans.com/" class="btn button glassmorphism onlyfans" target="_blank" rel="noopener noreferrer">OnlyFans</a></li>
+            <li><a href="https://www.patreon.com/" class="btn button neumorphism patreon" target="_blank" rel="noopener noreferrer">Patreon</a></li>
+            <li><a href="https://justfor.fans/" class="btn button glassmorphism justforfans" target="_blank" rel="noopener noreferrer">JustForFans</a></li>
+            <li><a href="https://admireme.vip/" class="btn button neumorphism admiremevip" target="_blank" rel="noopener noreferrer">AdmireMeVIP</a></li>
+            <li><a href="https://ismygirl.com/" class="btn button glassmorphism ismygirl" target="_blank" rel="noopener noreferrer">IsMyGirl</a></li>
+            <li><a href="https://stars.avn.com/" class="btn button neumorphism avnstars" target="_blank" rel="noopener noreferrer">AVN Stars</a></li>
+            <li><a href="https://fancentro.com/" class="btn button glassmorphism fancentro" target="_blank" rel="noopener noreferrer">FanCentro</a></li>
+            <li><a href="https://www.loyalfans.com/" class="btn button neumorphism loyalfans" target="_blank" rel="noopener noreferrer">LoyalFans</a></li>
+            <li><a href="https://www.manyvids.com/" class="btn button glassmorphism manyvids" target="_blank" rel="noopener noreferrer">ManyVids</a></li>
+            <li><a href="https://www.connectpal.com/" class="btn button neumorphism connectpal" target="_blank" rel="noopener noreferrer">ConnectPal</a></li>
+            <li><a href="https://www.sextpanther.com/" class="btn button glassmorphism sextpanther" target="_blank" rel="noopener noreferrer">SextPanther</a></li>
+            </ul>
+        </div>
+
+        <!-- Category: Stock Photos -->
+        <div class="category">
+            <h2>Stock Photos</h2>
+            <ul>
+                <li><a href="https://depositphotos.com/" class="btn button neumorphism depositphotos" target="_blank" rel="noopener noreferrer">Depositphotos</a></li>
+            </ul>
+        </div>
+
+        <!-- Category: Social Media -->
+        <div class="category">
+            <h2>Social Media</h2>
+            <ul>
+                <li><a href="https://www.facebook.com/" class="btn button glassmorphism facebook" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+                <li><a href="https://www.tiktok.com/login" class="btn button neumorphism tiktok" target="_blank" rel="noopener noreferrer">TikTok</a></li>
+                <li><a href="https://www.instagram.com/accounts/login/" class="btn button glassmorphism instagram" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                <li><a href="https://twitter.com/i/flow/login" class="btn button neumorphism twitter" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+            </ul>
+        </div>
+
+        <!-- Category: Online Gambling -->
+        <div class="category">
+            <h2>Online Gambling</h2>
+            <ul>
+                <li><a href="https://www.neteller.com/" class="btn button glassmorphism neteller" target="_blank" rel="noopener noreferrer">Neteller</a></li>
+            <li><a href="https://www.betfair.com/" class="btn button neumorphism betfair" target="_blank" rel="noopener noreferrer">Betfair</a></li>
+            <li><a href="https://www.888sport.com/" class="btn button glassmorphism sport" target="_blank" rel="noopener noreferrer">888sport</a></li>
+            <li><a href="https://www.unibet.com/" class="btn button neumorphism unibet" target="_blank" rel="noopener noreferrer">Unibet</a></li>
+                <li><a href="https://www.bet365.com/" class="btn button glassmorphism bet365" target="_blank" rel="noopener noreferrer">Bet365</a></li>
+                <li><a href="http://betsafe.com" class="btn button neumorphism betsafe" target="_blank" rel="noopener noreferrer">Betsafe</a></li>
+            </ul>
+        </div>
+
+        <!-- Category: Adult Content -->
+        <div class="category">
+            <h2>Adult Content</h2>
+            <ul>
+                <li><a href="https://xhamster.com/" class="btn button glassmorphism xhamster" target="_blank" rel="noopener noreferrer">xHamster</a></li>
+            </ul>
+        </div>
+
+        <!-- Category: Email -->
+        <div class="category">
+            <h2>Email</h2>
+            <ul>
+                <li><a href="https://login.live.com" class="btn button neumorphism live" target="_blank" rel="noopener noreferrer">Microsoft Live</a></li>
+            </ul>
+        </div>
+
+        <!-- Category: Microblogging -->
+        <div class="category">
+            <h2>Microblogging</h2>
+            <ul>
+                <li><a href="https://twitter.com/i/flow/login" class="btn button glassmorphism twitter" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+            </ul>
+        </div>
+
+        <!-- Add more categories here -->
+        <div class="category">
+            <h2>Money Transfer</h2>
+            <ul>
+                <li><a href="https://wise.com/" class="btn button glassmorphism wise" target="_blank" rel="noopener noreferrer">Wise</a></li>
+            <li><a href="https://www.revolut.com/" class="btn button neumorphism revolut" target="_blank" rel="noopener noreferrer">Revolut</a></li>
+            <li><a href="https://stripe.com/" class="btn button glassmorphism stripe" target="_blank" rel="noopener noreferrer">Stripe</a></li>
+            <li><a href="https://www.transfergo.com/" class="btn button neumorphism transfergo" target="_blank" rel="noopener noreferrer">TransferGo</a></li>
+            <li><a href="https://www.ofx.com/" class="btn button glassmorphism ofx" target="_blank" rel="noopener noreferrer">OFX</a></li>
+            <li><a href="https://www.worldfirst.com/" class="btn button neumorphism worldfirst" target="_blank" rel="noopener noreferrer">WorldFirst</a></li>
+            <li><a href="https://www.remit2india.com/" class="btn button glassmorphism remit2india" target="_blank" rel="noopener noreferrer">Remit2India</a></li>
+                <li><a href="https://www.remitly.com/" class="btn button neumorphism remitly" target="_blank" rel="noopener noreferrer">Remitly</a></li>
+                <li><a href="https://www.worldremit.com/en" class="btn button glassmorphism worldremit" target="_blank" rel="noopener noreferrer">WorldRemit</a></li>
+            </ul>
+        </div>
+
+            <!-- Category: USA Banks -->
+    <div class="category">
+        <h2>USA Banks</h2>
+        <ul>
+            <li><a href="https://www.chase.com/" class="btn button neumorphism chase" target="_blank" rel="noopener noreferrer">Chase Bank</a></li>
+            <li><a href="https://www.bankofamerica.com/" class="btn button glassmorphism boa" target="_blank" rel="noopener noreferrer">Bank of America</a></li>
+            <li><a href="https://www.wellsfargo.com/" class="btn button neumorphism wellsfargo" target="_blank" rel="noopener noreferrer">Wells Fargo</a></li>
+            <li><a href="https://online.citi.com/" class="btn button glassmorphism citibank" target="_blank" rel="noopener noreferrer">Citibank</a></li>
+            <li><a href="https://www.jpmorganchase.com/" class="btn button neumorphism jpmorgan" target="_blank" rel="noopener noreferrer">JPMorgan Chase</a></li>
+        </ul>
+    </div>
+
+    
+        <!-- Category: Music Distribution -->
+        <div class="category">
+            <h2>Music Distribution</h2>
+            <ul>
+                <li><a href="https://www.tunecore.com/" class="btn button neumorphism tunecore" target="_blank" rel="noopener noreferrer">TuneCore</a></li>
+                <li><a href="https://amuse.io/" class="btn button glassmorphism amuse" target="_blank" rel="noopener noreferrer">Amuse</a></li>
+            </ul>
+        </div>
+    
+        <!-- Category: Website Building -->
+        <div class="category">
+            <h2>Website Building</h2>
+            <ul>
+                <li><a href="https://www.wix.com/" class="btn button neumorphism wix" target="_blank" rel="noopener noreferrer">Wix</a></li>
+                <li><a href="https://wordpress.com/" class="btn button glassmorphism wordpress" target="_blank" rel="noopener noreferrer">WordPress</a></li>
+            </ul>
+        </div>
+    
+        <!-- Category: Online Shopping -->
+        <div class="category">
+            <h2>Online Shopping</h2>
+            <ul>
+                <li><a href="https://www.rakuten.com/" class="btn button neumorphism rakuten" target="_blank" rel="noopener noreferrer">Rakuten</a></li>
+                <li><a href="https://www.joinhoney.com/" class="btn button glassmorphism honey" target="_blank" rel="noopener noreferrer">Honey</a></li>
+                <li><a href="https://www.namecheap.com/" class="btn button neumorphism namecheap" target="_blank" rel="noopener noreferrer">Namecheap</a></li>
+            </ul>
+        </div>
+    
+        <!-- Category: Web Hosting -->
+        <div class="category">
+            <h2>Web Hosting</h2>
+            <ul>
+                <li><a href="https://www.hostgator.com/" class="btn button glassmorphism hostgator" target="_blank" rel="noopener noreferrer">HostGator</a></li>
+                <li><a href="https://www.heroku.com/" class="btn button neumorphism heroku" target="_blank" rel="noopener noreferrer">Heroku</a></li>
+                <li><a href="https://www.digitalocean.com/" class="btn button glassmorphism digitalocean" target="_blank" rel="noopener noreferrer">DigitalOcean</a></li>
+            </ul>
+        </div>
+
+        
+    <!-- Category: News & Magazines -->
+    <div class="category">
+        <h2>News & Magazines</h2>
+        <ul>
+            <li><a href="https://www.nytimes.com/" class="btn button neumorphism nytimes" target="_blank" rel="noopener noreferrer">The New York Times</a></li>
+            <li><a href="https://www.washingtonpost.com/" class="btn button glassmorphism washingtonpost" target="_blank" rel="noopener noreferrer">The Washington Post</a></li>
+            <li><a href="https://www.usatoday.com/" class="btn button neumorphism usatoday" target="_blank" rel="noopener noreferrer">USA Today</a></li>
+        </ul>
+    </div>
+
+    <!-- Category: Technology & Gadgets -->
+    <div class="category">
+        <h2>Technology & Gadgets</h2>
+        <ul>
+            <li><a href="https://www.cnet.com/" class="btn button glassmorphism cnet" target="_blank" rel="noopener noreferrer">CNET</a></li>
+            <li><a href="https://www.wired.com/" class="btn button neumorphism wired" target="_blank" rel="noopener noreferrer">Wired</a></li>
+        </ul>
+    </div>
+
+    <!-- Category: Business & Finance -->
+    <div class="category">
+        <h2>Business & Finance</h2>
+        <ul>
+            <li><a href="https://www.bloomberg.com/" class="btn button glassmorphism bloomberg" target="_blank" rel="noopener noreferrer">Bloomberg</a></li>
+            <li><a href="https://www.forbes.com/" class="btn button neumorphism forbes" target="_blank" rel="noopener noreferrer">Forbes</a></li>
+        </ul>
+    </div>
+
+    <!-- Category: Shopping & Deals -->
+    <div class="category">
+        <h2>Shopping & Deals</h2>
+        <ul>
+            <li><a href="https://www.walmart.com/" class="btn button glassmorphism walmart" target="_blank" rel="noopener noreferrer">Walmart</a></li>
+            <li><a href="https://www.target.com/" class="btn button neumorphism target" target="_blank" rel="noopener noreferrer">Target</a></li>
+        </ul>
+    </div>
+
+    <!-- Category: Social Networking -->
+    <div class="category">
+        <h2>Social Networking</h2>
+        <ul>
+            <li><a href="https://www.linkedin.com/" class="btn button glassmorphism linkedin" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="https://nextdoor.com/" class="btn button neumorphism nextdoor" target="_blank" rel="noopener noreferrer">Nextdoor</a></li>
+        </ul>
+    </div>
+
+    <!-- Category: Real Estate -->
+    <div class="category">
+        <h2>Real Estate</h2>
+        <ul>
+            <li><a href="https://www.zillow.com/" class="btn button glassmorphism zillow" target="_blank" rel="noopener noreferrer">Zillow</a></li>
+            <li><a href="https://www.realtor.com/" class="btn button neumorphism realtor" target="_blank" rel="noopener noreferrer">Realtor.com</a></li>
+        </ul>
+    </div>
+
+    <!-- Category: Government Services -->
+    <div class="category">
+        <h2>Government Services</h2>
+        <ul>
+            <li><a href="https://www.usa.gov/" class="btn button glassmorphism usagov" target="_blank" rel="noopener noreferrer">USA.gov</a></li>
+        </ul>
+    </div>
+
+    <!-- Category: Healthcare & Medical -->
+    <div class="category">
+        <h2>Healthcare & Medical</h2>
+        <ul>
+            <li><a href="https://www.mayoclinic.org/" class="btn button neumorphism mayoclinic" target="_blank" rel="noopener noreferrer">Mayo Clinic</a></li>
+            <li><a href="https://www.cdc.gov/" class="btn button glassmorphism cdc" target="_blank" rel="noopener noreferrer">CDC</a></li>
+        </ul>
+    </div>
+
+    <!-- Category: Education & Universities -->
+    <div class="category">
+        <h2>Education & Universities</h2>
+        <ul>
+            <li><a href="https://www.harvard.edu/" class="btn button neumorphism harvard" target="_blank" rel="noopener noreferrer">Harvard University</a></li>
+            <li><a href="http://web.mit.edu/" class="btn button glassmorphism mit" target="_blank" rel="noopener noreferrer">MIT</a></li>
+        </ul>
+    </div>
+
+    <!-- Category: Entertainment & Events -->
+    <div class="category">
+        <h2>Entertainment & Events</h2>
+        <ul>
+            <li><a href="https://www.ticketmaster.com/" class="btn button neumorphism ticketmaster" target="_blank" rel="noopener noreferrer">Ticketmaster</a></li>
+            <li><a href="https://www.eventbrite.com/" class="btn button glassmorphism eventbrite" target="_blank" rel="noopener noreferrer">Eventbrite</a></li>
+        </ul>
+    </div>
+
+        <!-- Add more categories here -->
+
+    <!-- Category: Food & Cooking -->
+    <div class="category">
+        <h2>Food & Cooking</h2>
+        <ul>
+            <li><a href="https://www.allrecipes.com/" class="btn button neumorphism allrecipes" target="_blank" rel="noopener noreferrer">AllRecipes</a></li>
+            <li><a href="https://www.foodnetwork.com/" class="btn button glassmorphism foodnetwork" target="_blank" rel="noopener noreferrer">Food Network</a></li>
+        </ul>
+    </div>
+
+    <!-- Category: Sports -->
+    <div class="category">
+        <h2>Sports</h2>
+        <ul>
+            <li><a href="https://www.espn.com/" class="btn button neumorphism espn" target="_blank" rel="noopener noreferrer">ESPN</a></li>
+            <li><a href="https://www.nba.com/" class="btn button glassmorphism nba" target="_blank" rel="noopener noreferrer">NBA</a></li>
+        </ul>
+    </div>
+
+    <!-- Category: Technology & Development -->
+    <div class="category">
+        <h2>Technology & Development</h2>
+        <ul>
+            <li><a href="https://github.com/" class="btn button neumorphism github" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+            <li><a href="https://stackoverflow.com/" class="btn button glassmorphism stackoverflow" target="_blank" rel="noopener noreferrer">Stack Overflow</a></li>
+        </ul>
+    </div>
+
+    <!-- Category: Travel & Tourism -->
+    <div class="category">
+        <h2>Travel & Tourism</h2>
+        <ul>
+            <li><a href="https://www.expedia.com/" class="btn button neumorphism expedia" target="_blank" rel="noopener noreferrer">Expedia</a></li>
+            <li><a href="https://www.booking.com/" class="btn button glassmorphism booking" target="_blank" rel="noopener noreferrer">Booking.com</a></li>
+        </ul>
+    </div>
+
+    <!-- Category: Online Learning & Courses -->
+    <div class="category">
+        <h2>Online Learning & Courses</h2>
+        <ul>
+            <li><a href="https://www.coursera.org/" class="btn button neumorphism coursera" target="_blank" rel="noopener noreferrer">Coursera</a></li>
+            <li><a href="https://www.udemy.com/" class="btn button glassmorphism udemy" target="_blank" rel="noopener noreferrer">Udemy</a></li>
+        </ul>
+    </div>
+
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
